@@ -81,15 +81,12 @@ public class CourseService {
     
     public Course updateCourse(String cid,
     						   Course course) {
-		Course target = null;
-		for (Course c : courses) {
-			if (c.getId().equals(cid)) {
-				target = c;
+		for (int i = 0; i < courses.size(); i++) {
+			if (courses.get(i).getId().equals(cid)) {
+				courses.set(i, course);
 				break;
 			}
 		}
-		courses.remove(target);
-		courses.add(course);
         return course;
     }
     
