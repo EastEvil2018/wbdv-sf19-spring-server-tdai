@@ -9,7 +9,7 @@ public class Topic {
 	List<Widget> widgets;
 	
 	public Topic() {
-		
+		this.widgets = new ArrayList<Widget>();
 	}
 	
 	public Topic(String id) {

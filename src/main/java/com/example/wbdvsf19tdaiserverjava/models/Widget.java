@@ -1,9 +1,9 @@
 package com.example.wbdvsf19tdaiserverjava.models;
 
+import java.util.Date;
 
 public class Widget {	
 	public Widget() {
-		
 	}
 	public Widget(String id) {
 		super();

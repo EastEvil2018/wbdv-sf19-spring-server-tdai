@@ -9,7 +9,7 @@ public class Module {
 	private List<Lesson> lessons;
 	
 	public Module() {
-		
+		this.lessons = new ArrayList<Lesson>();
 	}
 	
 	public Module(String id) {

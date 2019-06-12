@@ -9,6 +9,7 @@ public class Course {
     private List<Module> modules;
     
     public Course() {
+    	this.modules = new ArrayList<Module>();
     }
     
     public Course(String id) {
