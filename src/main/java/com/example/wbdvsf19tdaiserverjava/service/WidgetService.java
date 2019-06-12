@@ -48,15 +48,12 @@ public class WidgetService {
     
     public Widget updateWidget(String wid,
     						   Widget widget) {
-		Widget target = null;
 		for (Widget w : widgets) {
 			if (w.getId().equals(wid)) {
-				target = w;
+				w = widget;
 				break;
 			}
 		}
-		widgets.remove(target);
-		widgets.add(widget);
         return widget;
     }
     
