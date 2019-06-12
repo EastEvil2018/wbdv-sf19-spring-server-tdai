@@ -8,6 +8,10 @@ public class Lesson {
 	String title;
 	List<Topic> topics;
 	
+	public Lesson() {
+		
+	}
+	
 	public Lesson(String id) {
 		this.id = id;
 		this.title = "Default Title";

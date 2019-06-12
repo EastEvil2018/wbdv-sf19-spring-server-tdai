@@ -8,6 +8,10 @@ public class Module {
 	private String title;
 	private List<Lesson> lessons;
 	
+	public Module() {
+		
+	}
+	
 	public Module(String id) {
 		this.id = id;
 		this.title = "Default Title";

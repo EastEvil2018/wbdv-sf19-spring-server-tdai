@@ -8,6 +8,10 @@ public class Topic {
 	String title;
 	List<Widget> widgets;
 	
+	public Topic() {
+		
+	}
+	
 	public Topic(String id) {
 		this.id = id;
 		this.title = "Default Title";
