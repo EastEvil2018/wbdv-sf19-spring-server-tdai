@@ -38,8 +38,8 @@ public class WidgetController {
     }
     
     @DeleteMapping("/api/widgets/{widgetId}")
-    public List<Widget> deleteWidget(@PathVariable("widgetId") String wid) {
-    	return widgetService.deleteWidget(wid);
+    public void deleteWidget(@PathVariable("widgetId") String wid) {
+    	widgetService.deleteWidget(wid);
     }
     
 }

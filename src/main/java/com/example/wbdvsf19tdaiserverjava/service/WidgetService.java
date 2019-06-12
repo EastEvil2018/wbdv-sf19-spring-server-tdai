@@ -57,11 +57,10 @@ public class WidgetService {
         return widget;
     }
     
-    public List<Widget> deleteWidget(String wid) {
+    public void deleteWidget(String wid) {
     	widgets = widgets
     			.stream()
     			.filter(widget -> !widget.getId().equals(wid))
     			.collect(Collectors.toList());
-    	return widgets;
     }    
 }

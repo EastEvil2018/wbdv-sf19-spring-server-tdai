@@ -7,7 +7,7 @@ public class Widget {
 		this.id = id;
 		this.name = "Default Name";
 		this.type = WidgetType.Heading;
-		this.order = 0;
+		this.order = OrderType.Unordered;
 		this.text = "Default Text";
 		this.src = "Default Source";
 		this.url = "Default Url";
@@ -18,12 +18,13 @@ public class Widget {
 		this.cssClass = "";
 		this.style = "";
 		this.value = "";
-		this.dataType = DataType.String;		
+		this.dataType = DataType.String;
+		this.items = "";
 	}
 	public Widget(String name, 
 				  String id, 
 				  WidgetType type, 
-				  int order, 
+				  OrderType order, 
 				  String text, 
 				  String src, 
 				  String url, 
@@ -34,7 +35,8 @@ public class Widget {
 				  String cssClass, 
 				  String style, 
 				  String value, 
-				  DataType dataType) {
+				  DataType dataType,
+				  String items) {
 		super();
 		this.name = name;
 		this.id = id;
@@ -51,12 +53,14 @@ public class Widget {
 		this.style = style;
 		this.value = value;
 		this.dataType = dataType;
+		this.items = items;
 	}
-	
+
+
 	private String name;
 	private String id;
 	private WidgetType type;
-	private int order;
+	private OrderType order;
 	private String text;
 	private String src;
 	private String url;
@@ -68,6 +72,7 @@ public class Widget {
 	private String style;
 	private String value;
 	private DataType dataType;
+	private String items;
 	
 	
 	public String getName() {
@@ -88,10 +93,10 @@ public class Widget {
 	public void setType(WidgetType type) {
 		this.type = type;
 	}
-	public int getOrder() {
+	public OrderType getOrder() {
 		return order;
 	}
-	public void setOrder(int order) {
+	public void setOrder(OrderType order) {
 		this.order = order;
 	}
 	public String getText() {
@@ -160,5 +165,10 @@ public class Widget {
 	public void setDataType(DataType dataType) {
 		this.dataType = dataType;
 	}
-
+	public String getItems() {
+		return items;
+	}
+	public void setItems(String items) {
+		this.items = items;
+	}
 }
