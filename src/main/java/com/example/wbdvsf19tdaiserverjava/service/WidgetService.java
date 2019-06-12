@@ -48,9 +48,9 @@ public class WidgetService {
     
     public Widget updateWidget(String wid,
     						   Widget widget) {
-		for (Widget w : widgets) {
-			if (w.getId().equals(wid)) {
-				w = widget;
+		for (int i = 0; i < widgets.size(); i++) {
+			if (widgets.get(i).getId().equals(wid)) {
+				widgets.set(i, widget);
 				break;
 			}
 		}
