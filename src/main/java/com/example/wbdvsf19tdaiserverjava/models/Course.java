@@ -8,6 +8,9 @@ public class Course {
     private String title;
     private List<Module> modules;
     
+    public Course() {
+    }
+    
     public Course(String id) {
     	this.id = id;
     	this.title = "Default Title";

@@ -2,6 +2,9 @@ package com.example.wbdvsf19tdaiserverjava.models;
 
 
 public class Widget {	
+	public Widget() {
+		
+	}
 	public Widget(String id) {
 		super();
 		this.id = id;
